@@ -13,7 +13,7 @@ import pretty_errors
 
 # endregion
 # region 配置日志
-# 日志文件的名称格式为"hls_YYYY-MM-DD_HH:MM:SS.log"，其中YYYY-MM-DD是当前日期，HH:MM:SS是当前时间
+# 日志文件的名称格式为"hls_YYYY-MM-DD.log"，其中YYYY-MM-DD是当前日期
 # rotation参数设置为"10 MB"，表示当日志文件大小达到10MB时，自动创建一个新的日志文件
 logger.add(f"hls_{time.strftime("%Y-%m-%d")}.log", rotation="10 MB")
 
